@@ -1,0 +1,326 @@
+
+* {
+    box-sizing: border-box;
+padding: 0px;
+margin: 0px;
+font-family: 'Poppins', sans-serif;
+}
+*::after,*::before{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+section{
+    padding-top: 4em;
+    height:700px;
+    width:100%;
+    background: url("../img/pexels-aphiwat-chuangchoem-359989.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:right;   
+}
+
+.container{   
+    width: 400px;
+  
+   
+}
+.container2{   
+    max-width: 1200px;
+  margin:0px auto;
+    width:90%;
+}
+.container1{
+    max-width: 800px;
+    text-align: center;
+    width:90%;
+   margin:0 auto;
+}
+
+.red{
+    color:rgb(202, 30, 30)
+}
+.black{
+    color:black;
+}
+.white{
+    color:white;
+}
+.bb{
+    background: black;
+}
+.wb{
+    background-color: rgb(240, 238, 238);
+}
+.container1 h1{
+font-size:1.7em;
+padding:0.4em;
+}
+.i{
+    padding:0.5em;
+    margin-left:1em;
+}
+nav{
+    position: sticky;
+    top:0%;
+    z-index: 10;
+    display:flex;
+    background: rgb(243, 234, 234);
+    /* box-shadow:(inset 5px 0px 20px 0px rgba(25, 36, 138, 0.459)); */
+    box-shadow:10px 10px 20px 10px rgba(17, 17, 17, 0.363);
+}
+.time{
+    display: flex;
+    justify-content: space-evenly;
+}
+.time-box{
+    display:flex;
+    flex-direction: column;
+    width:30%;
+    height:100px;
+    /* border:2px black solid; */
+    border-radius: 2em;
+    margin-top: 1em;
+    box-shadow:10px 10px 20px 0px rgba(17, 17, 17, 0.363);
+}
+.content{
+   height:70%;
+   text-align: center;
+
+}
+.text{
+    height:30%;
+    background-color: red;
+    border-bottom-right-radius: 2em;
+    border-bottom-left-radius: 2em;
+    text-align: center;
+    color: rgb(221, 220, 226);
+}
+
+#main h1{
+    font-size:3.3em;
+}
+.date{
+    display:flex;
+    justify-content: space-evenly;
+    margin-top: 1.3em;;
+}
+.day{
+    text-align: center;
+    font-size: small;
+    color: azure;
+    background-color: red;
+    margin-top: 1em;
+    box-shadow:inset 5px 0px 30px 0px rgba(5, 5, 5, 0.308);
+}
+.mainbox{
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    background: rgb(233, 227, 227);
+
+    border-top-right-radius: 3em;
+    border-top-left-radius: 3em;
+    box-shadow:10px 10px 20px 0px rgba(17, 17, 17, 0.363);
+}
+.all{
+    display:flex;
+    padding:1em;
+    padding-bottom: 0px;
+    justify-content: space-evenly;
+}
+.setalarm{
+    width: 40%;
+    text-align: center;
+    margin-left:1em ;
+    height:330px;
+    padding:1em;
+    background:linear-gradient(rgba(255, 255, 255, 0.644),rgba(255, 255, 255, 0.774)), url("../img/png-clipart-blue-white-and-red-bell-alarm-clock-illustration-alarm-clock-icon-blue-alarm-clock-blue-electronics.png");
+    border-top-right-radius: 3em;
+    border-top-left-radius: 3em;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.sethead{
+    font-size:1.8em;
+}
+#hourinput{
+    height:2.7em;
+    width:200px;
+    background-color: rgb(236, 26, 26);
+    font-size: medium;
+    font-weight: 500px;
+    color:rgb(240, 232, 232);
+    padding:1em;
+    border-radius: 1em;
+    box-shadow: 5px 0px 15px 5px rgba(5, 5, 5, 0.425);
+    border-width: none;
+    outline: none;
+    margin:1em 0px;
+    border: none;
+}
+.btn1{
+    padding:0.5em;
+    width:90%;
+    margin:0.5em;
+    letter-spacing: 0.1em;
+    color: white;
+    background: black;
+    box-shadow: 5px 0px 15px 5px rgba(5, 5, 5, 0.425);
+    border:none;
+    transition: all 0.3s ease-in;
+    border-radius: 2em;
+    outline: none;
+}
+.btn1:hover{
+    background: rgb(32, 32, 32);
+    cursor: pointer;
+}
+#hourinput:hover{
+    cursor:text;
+    
+}
+.msg1{
+    width:80%;
+    margin:20px auto;
+    text-align: center;
+    background-color:rgba(75, 233, 96, 0.877) ;
+    font-size: 1.3rem;
+    padding: 0.2em;
+    border-radius: 20px;
+    display: none;
+}
+.msg2{
+    width:80%;
+    margin:20px auto;
+    text-align: center;
+    background-color:rgba(248, 78, 78, 0.877) ;
+    font-size: 1.3rem;
+    padding: 0.2em;
+    border-radius: 20px;
+    display: none;
+}
+footer{
+    background-color: rgb(29, 29, 29);
+    padding:1em;
+    text-align:center;
+    font-size: small;
+    color: rgb(212, 212, 212);
+}
+/* ===========media========================== */
+@media (min-width:699px) and (max-width:870px){
+    #main {
+        height:700px;
+        }
+    nav .container1 h1{
+        font-size: 1.5rem;
+        padding-top: 17px;
+    }
+    .sethead{
+         font-size: 1.3rem;
+}
+#main .time-date h1{
+    font-size: 2.7rem;
+}
+#main .time-date h3{
+    font-size: 1rem;
+}
+}
+@media(max-width:700px)
+{
+    #main {
+        height:900px;
+        }
+    nav .container1 h1{
+        font-size: 1.3rem;
+        padding-top: 17px;
+    }
+    .all{
+        flex-direction: column;
+    }
+    .setalarm{
+        width:80%;
+        margin: 30px auto;
+       
+    }
+    .mainbox{
+        width:80%;
+        margin: 0px auto;
+    }
+    .container2 .msg2{
+        font-size:1em ;
+    }
+    .container2 .msg1{
+        font-size:1em ;
+    }
+}
+
+@media(max-width:600px){
+    #main .time-date h1{
+        font-size: 2.7rem;
+    }
+    .sethead{
+        font-size: 1.3rem;
+}
+.container2{
+    width:100%;
+}
+.container2 .msg2{
+    font-size:1em ;
+}
+}
+@media (max-width:500px) {
+    .time-box{
+        width:30%;
+        height:auto;
+        
+    }
+    #main .time-box h1{ 
+        font-size:1.8rem;
+    }
+    #main .time-box h3{ 
+        font-size:0.9rem;
+    }
+    section{
+        padding-top:2.5em;
+    }
+    .day #day{
+        font-size: 2rem;
+    }
+   .container2 .msg2{
+        font-size:1em ;
+    }
+    .container2 .msg1{
+        font-size:1em ;
+    }
+}
+@media(max-width:460px){
+    nav .fas{
+        margin-top: 0.22em;
+        
+    }
+    .container2 .msg2{
+        font-size:1em ;
+        padding:5px;
+    }
+    .container2 .msg1{
+        font-size:1em ;
+        padding:5px;
+    }
+
+}
+@media (max-width:360px) {
+    #main .time-box h1{ 
+        font-size:1.6rem;
+    }
+    #main .time-box h3{ 
+        font-size:0.7rem;
+    }
+    .sethead{
+        font-size: 1.1rem;
+}
+    #hourinput{
+        width:auto;
+        height:38px;
+    }
+}

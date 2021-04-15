@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a live online clock! set alarm reminder and many!">
+    <meta name="keywords" content="alarm,date,24 hours date format,online alarm,alarm for pc desktop">
+    <script src="https://kit.fontawesome.com/0e767e0926.js" crossorigin="anonymous"></script>
+    <title> Online Alarm</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/alarm.css">
+</head>
+
+<body>
+    <nav class="navbar  ">
+        <div class="i">
+            <i class="fas fa-clock fa-3x"></i>
+        </div>
+
+        <div class="container1"> 
+            <h1>Welcome to online Alarm system</h1>
+        </div>
+
+    </nav>
+   
+    <section id="main">
+        <div class="all container2">
+        <div class="mainbox container">
+            <div class="time-date">
+                <div class="time">
+                    <div class="hour time-box wb">
+                        <div class="content">
+                            <h1 id="hrs"></h1>
+                        </div>
+                        <div class="text">
+                            <h3>Hour</h3>
+                        </div>
+                    </div>
+                    <div class="min time-box wb">
+                        <div class="content">
+                            <h1 id="min"></h1>
+                        </div>
+                        <div class="text">
+                            <h3>Minute</h3>
+                        </div>
+                    </div>
+                    <div class="seconds time-box wb">
+                        <div class="content">
+                            <h1 id="sec"></h1>
+                        </div>
+                        <div class="text">
+                            <h3>Second</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="date">
+                    <div class="daydate time-box wb">
+                        <div class="content">
+                            <h1 id="date"></h1>
+                        </div>
+                        <div class="text">
+                            <h3>Date</h3>
+                        </div>
+                    </div>
+                    <div class="month time-box wb">
+                        <div class="content">
+                            <h1 id="month"></h1>
+                        </div>
+                        <div class="text">
+                            <h3>Month</h3>
+                        </div>
+                    </div>
+                    <div class="year time-box wb">
+                        <div class="content">
+                            <h1 id="year"></h1>
+                        </div>
+                        <div class="text">
+                            <h3>Year</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="day">
+                <h1 id="day"></h1>
+            </div>
+        </div>
+
+            <div class="setalarm ">
+                <h2 class="sethead">Set up your alarm</h2>
+                <div class="form">
+                    <form >
+                        <input type="time"  id="hourinput" maxlength="2" ><br>
+                        <input type="button" class="btn1" id="timebtn" value="Set Alarm" onclick="timevalue()"><br>
+                        <input type="button" id="pausebtn"class="btn1" value="Stop Alarm" onclick="pause()"><br>
+                        <input type="button" id="testalarm"class="btn1" value="Test Alarm" onclick="play()">
+                        <input type="reset" id="cancle"class="btn1" value="Cancle Alarm" onclick="canclealarm()">
+                        
+                        <audio src="./js/time-alarm.wav" id="audio"></audio>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="message container2">
+            <p id="messagepara1" class="msg1"></p>
+            <p id="messagepara2" class="msg2"></p>
+        </div>
+    </section>
+    <footer>
+        <div class="container2">
+            <p>Created by- Prem . All copyright &copy; reserved!</p>
+            <p>Reach us at-(premofdbapatna@gmail.com)</p>
+        </div>
+    </footer>
+    
+</body>
+<script src="./js/alarm.js"></script>
+</html>
